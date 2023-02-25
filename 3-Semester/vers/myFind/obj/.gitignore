@@ -1,0 +1,5 @@
+#ignore everthing inside obj folder except .gitignore 
+
+*
+*/
+!.gitignore

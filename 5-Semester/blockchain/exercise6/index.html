@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blockchain Exercise 6</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #6327a8;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        .button:hover {
+            background-color: #8951c9
+        }
+
+        .button:active {
+            background-color: #6327a8;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        h2 {
+            color: #230e3b;
+        }
+
+        p {
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>Blockchain Exercise 6</h1>
+
+    <button id="connect_btn" class="button">Connect MetaMask Wallet</button>
+
+    <div id="block_info" style="display:none;">
+        <h2>A</h2>
+        <button onclick="getBlockHeight()" class="button">Get Goerli Block Height</button>
+        <p id="blockHeight"></p>
+    </div>
+
+    <section id="token_info" style="display:none;">
+        <h2>B</h2>
+        <button onclick="getBalance()" class="button">Show Balance</button>
+        <p id="balance"></p>
+    </section>
+
+    <section id="transaction_info" style="display:none;">
+        <h2>C</h2>
+        <button onclick="transaction()" class="button">Transfer 10 RTP</button>
+        <p id="transaction_hash"></p>
+    </section>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/web3@1.2.9/dist/web3.min.js"></script>
+
+<script>
+
+    var web3
+    var walletAddress
+
+    const abiJSON = `[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "Approval",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "value",
+				"type": "uint256"
+			}
+		],
+		"name": "Transfer",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			}
+		],
+		"name": "allowance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "approve",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "account",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "decimals",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "subtractedValue",
+				"type": "uint256"
+			}
+		],
+		"name": "decreaseAllowance",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "spender",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "addedValue",
+				"type": "uint256"
+			}
+		],
+		"name": "increaseAllowance",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "name",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "symbol",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalSupply",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "transfer",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "transferFrom",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "recipient",
+				"type": "address"
+			}
+		],
+		"name": "whitelist",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]`
+    const contractAddress = "0xF533c45cF55b33944c55C38A306464e209f2D476";
+
+    const getWeb3 = async () => {
+        return new Promise(async (resolve, reject) => {
+            const web3 = new Web3(window.ethereum)
+
+            try {
+                await await ethereum.request({ method: 'eth_accounts' });
+                resolve(web3)
+            } catch (error) {
+                reject(error)
+            }
+        })
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("connect_btn").addEventListener("click", async ({ }) => {
+            web3 = await getWeb3()
+            walletAddress = await web3.eth.requestAccounts()
+            const walletBalanceInWei = await web3.eth.getBalance(walletAddress[0])
+            const walletBalanceInEth = Math.round(Web3.utils.fromWei(walletBalanceInWei) * 1000) / 1000
+
+            document.getElementById("connect_btn").setAttribute("style", "display:none")
+
+            document.getElementById("block_info").setAttribute("style", "display:block")
+            document.getElementById("token_info").setAttribute("style", "display:block")
+            document.getElementById("transaction_info").setAttribute("style", "display:block")
+
+            document.getElementById("wallet_balance").innerText = `Balance: ${walletBalanceInEth} ETH`
+        })
+    })
+
+    /* A */
+    const getBlockHeight = async () => {
+        web3.eth.getBlockNumber().then(function (blockHeight) {
+            document.getElementById("blockHeight").innerText = `Block Height: ${blockHeight}`;
+        });
+    }
+
+    /* B */
+    const getBalance = async () => {
+
+        var contract = initContract()
+
+        const tokenBalance = await contract.methods.balanceOf(walletAddress[0]).call()
+        const tokenBalanceDecimal = Math.round(Web3.utils.fromWei(tokenBalance) * 1000) / 1000
+
+        document.getElementById("balance").innerText = `Balance: ${tokenBalanceDecimal} RTP`;
+    }
+
+    /* C */
+    const transaction = async () => {
+        const toAddress = "0x15433DA387451F9dE4565280C85506CB71aF9376"
+        const amount = web3.utils.toBN(10)
+        const decimals = web3.utils.toBN(18)
+
+        var contract = initContract()
+
+        const value = amount.mul(web3.utils.toBN(10).pow(decimals))
+
+
+        contract.methods.transfer(toAddress, value).send({ from: walletAddress[0] })
+            .on('transactionHash', function (hash) {
+                console.log(hash)
+                document.getElementById("transaction_hash").innerHTML = `Txn Hash: ${hash}`;
+            })
+    }
+
+    function initContract() {
+        const abiParsed = JSON.parse(abiJSON)
+        return new web3.eth.Contract(abiParsed, contractAddress)
+    }
+</script>
+
+</html>

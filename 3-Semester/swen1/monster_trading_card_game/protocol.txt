@@ -1,0 +1,61 @@
+#############################################
+#   MONSTER TRADING CARD GAME - PROTCOL     #
+#############################################
+   Student: Raphael    
+   Total Time spent: 65 hours				 
+
+
+Unfortunately the mutexes seem to cause problems wich I could not fix in time. Without them the server should work fine.
+(fixed)
+-----------
+  DESIGN: 
+-----------
+
+The application consists of three projects: 
+    1) HTTP SERVER CORE:
+        This is the sample Http server which was implemented in the lessons during the course SWEN1. It provides a working HTTP server in C#.
+    2) MTCG TEST:
+        A collection of unit test to validate the functionality of the application.
+    3) MTCG SERVER: 
+        This project builds upon the HTTP SERVER CORE Project and extends it with all necessary functionality to create the Monster Trading Card Game.
+	The MTCG Server consists of the following Members:
+		1) DAL: Data Abstraction Layer: All classes and methods for data persistence are located here. All Database actions and SQL prepared statements can be found here.
+		2) IdentityProvider: The UserIdentityProvider Class is used to validate the given authentication token of a request and to find the corresponding user.
+		3) Managers: Manager Classes are collections of methods that need to be performed when handling requests. Instances of all managers are stored in the Business manager class.
+		4) Models: Here blueprints for the different Components can be found. The Log Models are used for client communication to safely handle requests. They can be converted into server models and back if needed.
+		5) Route Commands: This is a collection of all accepted Routes from the server, from here the different managers are called after receiving requests. 
+		6) MonsterTradingCardGameServer.cs: This class is a child of the HTTP Server Class from the Core. It overrides most methods to be used for this specific implementation. Here all exceptions are caught and corresponding responses are sent. 
+
+
+--------------------
+  LESSONS LEARNED: 
+--------------------
+
+This project helped me gain confidence in working with larger projects. It is the most representative example of a real-life  project I had to implement during the duration of my studies.
+I learned the importance of splitting up code into smaller pieces to make it more easily readable.
+
+Further implementing this project taught me how to work with C# as I had no experience of this programming language before.
+
+Throwing and catching exceptions is one coding method I picked up upon while working on this project. I did not really use them beforehand but started using them a lot in this project.
+
+
+---------------------------
+  UNIT TESTING DECISIONS:
+---------------------------
+When writing my Unit tests, I focused on my manager classes and the validation of their methods. I created multiple unit test for most methodes which handle each individual edge case. 
+For the trade creation for example I wrote 3 unit tests:
+One unit test to test a working trade creation no errors are expected here.
+One unit test to test a trade creation attempt when the user doesn't own the specified card. An exception is expected.
+One unit test to test a trade creation attempt when the user has the specified card in his deck. An exception is expected. 
+
+This way I can quickly validate weather all edge cases of a given scenario will be handled in case I change or add some code.
+
+------------------
+  UNIQUE FEATURE:
+------------------
+
+Instead of having fixed element types for each card. My implementation allows for any combination of element type and card. So, there aren't only FireElves but also WaterElves or RegularElves.
+To achieve this, I had to make sure my application would still work with the provided curl scripts I had to split up the name and the element of a card from the json request. When sending the response
+they have to be combined again to build the expected response. This way a potential frontend would not need to know that the server makes this distinction. 
+
+Further my implementation makes it possible for new spell types to be easily implemented. I added one more spell card for demonstration purposes.

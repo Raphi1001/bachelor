@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="itext7" Version="7.2.3" />
+    <PackageReference Include="log4net" Version="2.0.14" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\tourPlanner.Log4Net\tourPlanner.Log4Net.csproj" />
+    <ProjectReference Include="..\tourPlanner.DAL\tourPlanner.DAL.csproj" />
+    <ProjectReference Include="..\tourPlanner.Models\tourPlanner.Models.csproj" />
+  </ItemGroup>
+
+</Project>

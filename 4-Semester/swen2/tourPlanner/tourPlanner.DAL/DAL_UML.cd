@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="tourPlanner.DAL.Exceptions.DatabaseErrorException" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\DatabaseErrorException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.DAL.Exceptions.ImageCreationFailedException" Collapsed="true">
+    <Position X="12" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ImageCreationFailedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.DAL.Exceptions.InvalidImportFileException" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidImportFileException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.DAL.Exceptions.RouteImportException" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\RouteImportException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.DAL.Mapquest.FileDAO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>gACAAAAAAAAAAAACAAAAAAAAgAAAAAAAAAAEAAAABAA=</HashCode>
+      <FileName>Mapquest\FileDAO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.DAL.Mapquest.ImageDAO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAQAAAAAAAAAAAAAAAIAAAAAAAAAACBAAAABA=</HashCode>
+      <FileName>Mapquest\ImageDAO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.DAL.TourLogRepository.DBTourLogRepository" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEACABAEBAAAAAAAAQACAAAAAAAAAAACKAACAEAAA=</HashCode>
+      <FileName>Repositories\TourLogRepository\DBTourLogRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.DAL.TourRepository.DBTourRepository" Collapsed="true">
+    <Position X="5.5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAJCAAAEAIAYAAAAAAAAARAAAQBAAAAAAAAAAMAAA=</HashCode>
+      <FileName>Repositories\TourRepository\DBTourRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.DAL.Repositories.Repository" Collapsed="true">
+    <Position X="6.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAIASAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="tourPlanner.DAL.Configuration.IDatabaseConfiguration">
+    <Position X="16.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Configuration\IDatabaseConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.DAL.Configuration.IDirectoryConfiguration">
+    <Position X="13.75" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\IDirectoryConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.DAL.Mapquest.IFileDAO">
+    <Position X="10" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Mapquest\IFileDAO.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.DAL.Mapquest.IImageDAO">
+    <Position X="11.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAABA=</HashCode>
+      <FileName>Mapquest\IImageDAO.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.DAL.TourLogRepository.ITourLogRepository">
+    <Position X="7.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAABAABAAAAAAAAAAAAAAAAAAAAAACAAAAAEAAA=</HashCode>
+      <FileName>Repositories\TourLogRepository\ITourLogRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.DAL.TourRepository.ITourRepository">
+    <Position X="5.5" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAJAAAAAAIAIAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Repositories\TourRepository\ITourRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.DAL.Repositories.IRepository" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

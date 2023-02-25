@@ -1,0 +1,17 @@
+{
+  "weight": 2,
+  "recipient": {
+    "name": "Linus Torvalds",
+    "street": "Werner-von-Siemens-Ring 14",
+    "postalCode": "85630",
+    "city": "Grasbrunn",
+    "country": "Germany"
+  },
+  "sender": {
+    "name": "Muh Kuh",
+    "street": "Am Europlatz 3",
+    "postalCode": "A-1120",
+    "city": "Wien",
+    "country": "Austria"
+  }
+}

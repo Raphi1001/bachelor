@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="tourPlanner.Logging.LogManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Logging\LogManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.225" />
+  </Class>
+  <Class Name="tourPlanner.Log4Net.Log4NetFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Log4NetFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.Log4Net.Log4NetLogger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAAAAAIAAAAAEAAAAAAAAEAAA=</HashCode>
+      <FileName>Log4NetLogger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="tourPlanner.Logging.ILogger">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAYAAAAAAAAAAAAAAAAEAAAAAAAAEAAA=</HashCode>
+      <FileName>Logging\ILogger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.Logging.ILoggerFactory">
+    <Position X="7.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\ILoggerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.Logging.ILogManager">
+    <Position X="9" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logging\ILogManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

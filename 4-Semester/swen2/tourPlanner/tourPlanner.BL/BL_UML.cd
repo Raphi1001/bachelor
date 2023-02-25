@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="tourPlanner.BL.Exceptions.ErrorImageRequest" Collapsed="true">
+    <Position X="16" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ErrorImageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.BL.Exceptions.ImportedTourAlreadyExistsException" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ImportedTourAlreadyExistsException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.BL.Exceptions.InvalidRouteException" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidRouteException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.BL.Exceptions.ServerErrorException" Collapsed="true">
+    <Position X="6.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ServerErrorException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.BL.Exceptions.TimeOutException" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\TimeOutException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.BL.InternalDirectionsApiErrorExcpt" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InternalDirectionsApiErrorExcpt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.BL.Managers.ApiManagers.RouteManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\ApiManagers\RouteManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.BL.Managers.ApiManagers.StaticMapManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Managers\ApiManagers\StaticMapManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.BL.Managers.TourLogsManagers.TourLogsManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAgABAABAAAIAAAAAABAAAAAAAAAAACAAAAEAAAA=</HashCode>
+      <FileName>Managers\TourLogsManagers\TourLogsManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.BL.Managers.ToursManagers.ToursManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgEQAABIAIEAAIAAAEAAkAAAFAAhAAAGAAEAAAA=</HashCode>
+      <FileName>Managers\ToursManagers\ToursManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.BL.Mapquest.RouteGenerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAKAAAAAAAAAgAAIAAgACAAAAAAAAAAAIA=</HashCode>
+      <FileName>Mapquest\RouteGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.BL.Mapquest.StaticMapGenerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAIAAIAAgAAAAAAQgAAAAAIA=</HashCode>
+      <FileName>Mapquest\StaticMapGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.BL.Report.TourReportGenerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gACAAAAAQABABEAAAAAAAAAAIAAAAAAAAAACAAAAAAg=</HashCode>
+      <FileName>Report\TourReportGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.175" />
+  </Class>
+  <Interface Name="tourPlanner.BL.IRouteGenerator">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mapquest\IRouteGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.BL.Managers.ApiManagers.IRouteManager">
+    <Position X="14.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\ApiManagers\IRouteManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.BL.Managers.ApiManagers.IStaticMapManager">
+    <Position X="12.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Managers\ApiManagers\IStaticMapManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.BL.Managers.TourLogsManagers.ITourLogsManager">
+    <Position X="16.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgABAABAAAIAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Managers\TourLogsManagers\ITourLogsManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.BL.Managers.ToursManagers.IToursManager">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAIEAAAAAAEAAkAAABAAhAAAGAAAAAAA=</HashCode>
+      <FileName>Managers\ToursManagers\IToursManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.BL.Mapquest.IGeneratorConfigurator">
+    <Position X="2" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAIAAAAgIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mapquest\IGeneratorConfigurator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.BL.Mapquest.IRouteGeneratorConfigurator">
+    <Position X="4.25" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mapquest\IRouteGeneratorConfigurator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.BL.Mapquest.IStaticMapGenerator">
+    <Position X="8.75" Y="4.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Mapquest\IStaticMapGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.BL.Report.ITourReportGenerator">
+    <Position X="10.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Report\ITourReportGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

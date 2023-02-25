@@ -1,0 +1,140 @@
+﻿<UserControl x:Class="tourPlanner.UIL.Views.TourDetailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:tourPlanner.UIL.Views" 
+             xmlns:viewmodels="clr-namespace:tourPlanner.UIL.ViewModels" 
+             mc:Ignorable="d"
+             xmlns:behaviors="clr-namespace:tourPlanner.UIL.Behaviors"
+
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <behaviors:StringToImageSourceConverter x:Key="StringToImageSourceConverter" />
+    </UserControl.Resources>
+    <DockPanel>
+        <Image DockPanel.Dock="Right" MaxWidth="300" Source="{Binding Item.ImagePath, Converter={StaticResource StringToImageSourceConverter}}" />
+        <StackPanel DockPanel.Dock="Left" Margin="5">
+
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                    <TextBlock Margin="2" TextWrapping="WrapWithOverflow" FontSize="16">Tour Detail:</TextBlock>
+                    
+                </Grid>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Name: " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Item.Name}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Description: " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Item.Description}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Start Point: " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Item.Route.From}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="End Point: " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Item.Route.To}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Distance: (km) " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Item.Route.Distance}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>
+            
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Tour Type: " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Item.Route.RouteType}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Planned Duration: (h) " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Item.Route.PlannedDurationH}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Creation Date: " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Item.CreationDate}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Popularity: " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding Logs.Count}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>            
+            <Border BorderBrush="Black" BorderThickness="0 0 0 0.1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Child Friendliness: " TextWrapping="WrapWithOverflow" FontSize="14" FontWeight="Bold"/>
+                    <TextBlock Grid.Column="1" Text="{Binding ChildFriendly}" TextWrapping="WrapWithOverflow" FontSize="14"/>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </DockPanel>
+
+</UserControl>
+
+    

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="tourPlanner.UIL.Behaviors.StringToImageSourceConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="8" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behaviors\StringToImageSourceConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Behaviors.TextBoxInputRegExBehaviour" Collapsed="true">
+    <Position X="7.25" Y="8" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAIQAFAwAABAAAAAAAAAAABAAAAAAAAAQAEAgAIA=</HashCode>
+      <FileName>Behaviors\TextBoxInputRegExBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.UIL.Configuration.AppConfiguration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEAIAAAAgIAAAACAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Configuration\AppConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Configuration.IoCContainerConfiguration" Collapsed="true">
+    <Position X="17" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQAAAAABAAAAIgAAAACCAoAAQBCAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\IoCContainerConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.UIL.Exceptions.InvalidInputException" Collapsed="true">
+    <Position X="17" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidInputException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.UIL.Navigation.NavigationService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAICAAAAAAAABAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Navigation\NavigationService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.AboutViewModel" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAEAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\AboutViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.AddRouteViewModel" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AwAAAgAAAAAgBAACAEQAAEhEAAAIAAAAAgAACACAAAA=</HashCode>
+      <FileName>ViewModels\AddRouteViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.AddTourLogViewModel" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAABAAjAEQAJEhFAAEAAAEBAiAEgAigBAA=</HashCode>
+      <FileName>ViewModels\AddTourLogViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.AddTourViewModel" Collapsed="true">
+    <Position X="20.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAgBAACAEQAAExEAAAAAAAAAgAAgACAAAA=</HashCode>
+      <FileName>ViewModels\AddTourViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.BaseViewModel" Collapsed="true">
+    <Position X="14.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAACAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.EditTourLogViewModel" Collapsed="true">
+    <Position X="24" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAhAAQAJEgEAAEAAAABAAAAAAiAAAA=</HashCode>
+      <FileName>ViewModels\EditTourLogViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.EditTourViewModel" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAACgAQAAggwAAAAMAAAEhAAAAAACAAAAAAiACAAAA=</HashCode>
+      <FileName>ViewModels\EditTourViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.ErrorViewModel" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAAAAAAAAEAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\ErrorViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.MainViewModel" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQAAAAABAAAAIiAAAAACAoAAQACAAIAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.MenuViewModel" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAAAgRCAAAKAgQAIBggAAAAAEQCAgEgACCAAAEACA=</HashCode>
+      <FileName>ViewModels\MenuViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.SearchViewModel" Collapsed="true">
+    <Position X="26.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAACIAAgACBAAAAAAQAAAAEAAAAggAAgAABAAA=</HashCode>
+      <FileName>ViewModels\SearchViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.TourDetailViewModel" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ViewModels\TourDetailViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.TourListViewModel" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAICAAAACIAAAEAAAABAgAAAAiAEABAAgAAQAAA=</HashCode>
+      <FileName>ViewModels\TourListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.UIL.ViewModels.TourLogsViewModel" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAIDAAAACAABAEAAAABAgAAAAiAEAFCEAAAQAAA=</HashCode>
+      <FileName>ViewModels\TourLogsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.AboutDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AboutDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.AddRouteDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AddRouteDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.AddTourDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AddTourDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.26" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.AddTourLogDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AddTourLogDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.EditTourDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\EditTourDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.EditTourLogDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\EditTourLogDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.ErrorDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ErrorDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.MenuView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MenuView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.SearchView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\SearchView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.TourDetailView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TourDetailView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.TourListView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TourListView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.23" />
+  </Class>
+  <Class Name="tourPlanner.UIL.Views.TourLogsView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TourLogsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="tourPlanner.UIL.App" Collapsed="true">
+    <Position X="14.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.UIL.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="tourPlanner.UIL.Navigation.INavigationService" Collapsed="true">
+    <Position X="14.5" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Navigation\INavigationService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="tourPlanner.UIL.ViewModels.ICloseWindow" Collapsed="true">
+    <Position X="12.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\ICloseWindow.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="tourPlanner.UIL.Navigation.NavigationMode" Collapsed="true">
+    <Position X="16.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Navigation\INavigationService.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

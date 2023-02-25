@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="tourPlanner.Models.Exceptions.InvalidDifficultyException" Collapsed="true">
+    <Position X="12" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidDifficultyException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.Exceptions.InvalidParameterException" Collapsed="true">
+    <Position X="12" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidParameterException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.Exceptions.InvalidRatingException" Collapsed="true">
+    <Position X="12" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidRatingException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.Exceptions.InvalidRouteTypeException" Collapsed="true">
+    <Position X="12" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\InvalidRouteTypeException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.MapQuest.MqResponse" Collapsed="true">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>MapQuest\MqRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.MapQuest.MqRoute" Collapsed="true">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAIACAAAABAAAAAAABAAQA=</HashCode>
+      <FileName>MapQuest\MqRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.MapQuest.MqInfo" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAAA=</HashCode>
+      <FileName>MapQuest\MqRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.MapQuest.MqLocation" Collapsed="true">
+    <Position X="3.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MapQuest\MqRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.MapQuest.MqBoundingBox" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQCAAAAAAAAAA=</HashCode>
+      <FileName>MapQuest\MqRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.MapQuest.MqCoordinates" Collapsed="true">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MapQuest\MqRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.MapQuest.MqOptions" Collapsed="true">
+    <Position X="3.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MapQuest\MqRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.Route.RouteInternal" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAAAQAAAAAAACAAAAhAAgAIAAAIAABQCAAAAAAAAAA=</HashCode>
+      <FileName>Route\RouteInternal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.Route.RouteTransfere" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BiEAAQIAAgAQACAAAAAAAgAIAQAIAABAAAAIAAAAAAA=</HashCode>
+      <FileName>Route\RouteTransfere.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.Tour.TourInternal" Collapsed="true">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAgAAAAgEBAAIRAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tour\TourInternal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.Tour.TourTransfere" Collapsed="true">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAgAgAAAAAEAAAIQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tour\TourTransfere.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.TourLog.TourLogInternal" Collapsed="true">
+    <Position X="9.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACBAAAAAAgAAAAAABAIAABAAAAAAEAAAAEAAAAAAA=</HashCode>
+      <FileName>TourLog\TourLogInternal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="tourPlanner.Models.TourLog.TourLogTransfere" Collapsed="true">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACBCAAAgAgAAAgAAEAIAABAAAAAAEAAAAEAAAAAAQ=</HashCode>
+      <FileName>TourLog\TourLogTransfere.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="tourPlanner.Models.Coordinates" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Coordinates.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="tourPlanner.Models.Enums.Difficulty" Collapsed="true">
+    <Position X="11.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQQAAAAAAAAAAAgAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\Difficulty.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="tourPlanner.Models.Enums.Rating" Collapsed="true">
+    <Position X="4.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Enums\Rating.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="tourPlanner.Models.Enums.SearchTypes" Collapsed="true">
+    <Position X="9.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Enums\SearchTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="tourPlanner.Models.Enums.RouteTypeEnum" Collapsed="true">
+    <Position X="7" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAUAAAAAAAAABAAAAAABAAAA=</HashCode>
+      <FileName>Enums\TourType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
